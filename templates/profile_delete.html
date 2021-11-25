@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Profile delete</h2>
+<form method="post"> <!-- namesto method je navadno action -->
+    <p>{{ user.name }} a si prepričan, da želiš izbirsati svoj profil?</p>
+    <button type="submit">DA</button> | <a href="/profile">NE</a>
+</form>
+{% endblock content %}
